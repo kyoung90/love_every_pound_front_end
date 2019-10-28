@@ -1,0 +1,114 @@
+.fc-content {
+  text-align: center;
+  background-color: white;
+}
+
+.fc-widget-content {
+  /* vertical-align: center; */
+  /* padding-top: 2em; 
+   height: 1em; */
+  /* Align Vertically */
+  /* align-content: center; */
+  /* align-items: center; */
+}
+
+.fc-title {
+  display: inline-block;
+  color: black;
+}
+
+.fc td.fc-today {
+  background: #98d8c9 !important;
+}
+
+.weight-chart {
+  height: 550px;
+  width: 90%;
+}
+
+/* .weight-chart{
+  height: 25em;
+  width: 50em;
+} */
+
+body {
+  background-color: rgb(234, 234, 234) !important;
+}
+
+.main-container {
+  padding-top: 3em;
+  /* text-align: center;
+  align-content: center; */
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+}
+
+.success {
+  background-color: #9b8ca5 !important;
+}
+
+.info {
+  background-color: #a0a605 !important;
+}
+
+.warning {
+  background-color: #98d8c9 !important;
+}
+
+.danger {
+  background-color: #59574c !important;
+}
+
+.primary {
+  background-color: #d4d949 !important;
+}
+
+.success-text {
+  color: #9b8ca5 !important;
+}
+
+.info-text {
+  color: #a0a605;
+}
+
+.warning-text {
+  color: #98d8c9 !important;
+}
+
+.danger-text {
+  color: #59574c !important;
+}
+
+.primary-text {
+  color: #d4d949 !important;
+}
+
+
+
+
+/* .aboutMe{
+  background-image: url("/assets/images/walking.jpg");
+  height: 800px;
+
+} */
+.Mission{
+  background-color: #d4d949 !important;
+  color: black;
+}
+
+.Vision{
+  background-color: #a0a605 !important;
+  color:black;
+}
+
+.Creators{
+  background-color: #98d8c9 !important;
+  color: black;
+}
+
+#mission-card{
+  padding-top: 4em ;
+}
