@@ -35,7 +35,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Back End
 
-Back end code can be found [here](https://github.com/kyoung90/love_every_pound)
+Back end code can be found [here](https://github.com/kyoung90/Love-Every-Pound)
 
 ## Link
 
