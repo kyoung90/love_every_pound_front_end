@@ -27,7 +27,7 @@ Please feel free to contribute :)
 * **Kenneth Young Castro** - [kyoung90](https://github.com/kyoung90)
 * **Justin Beaulieu** - [beaulieu](https://github.com/Beaulieu527)
 
-See also the list of [contributors](https://github.com/kyoung90/country/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/kyoung90/love_every_pound_front_end/graphs/contributors) who participated in this project.
 
 ## License
 
