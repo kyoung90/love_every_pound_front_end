@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import { loginAction } from "../../../actions/userActions";
 import { connect } from "react-redux";
+import { toast } from "react-toastify";
 
 const Login = props => {
   const [user, setUser] = useState({ email: "", password: "" });
@@ -23,7 +24,12 @@ const Login = props => {
 
   const handleSubmit = () => {
     props.login({ user }).then(() => {
-      props.history.push("/quote");
+      if (localStorage.getItem("token")){
+        props.history.push("/quote");
+      } else {
+        toast.error("Could not log you in with what you entered.")
+      }
+      
     });
   };
 

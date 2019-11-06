@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <ToastContainer />
+      <ToastContainer autoClose={false}/>
       <Navbar
         leftItems={leftItems}
         rightItems={rightItems}
