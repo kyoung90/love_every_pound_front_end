@@ -12,7 +12,7 @@ export function fetchRandomQuote() {
             }).then(responseJSON => {
                 dispatch({type: "FETCH_RANDOM_QUOTE", payload: responseJSON})
             }).catch(error => {
-                toast.error(error.message)
+                toast.error("Could not retrieve quote.")
               })
     };
 }
