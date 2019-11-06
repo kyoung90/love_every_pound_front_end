@@ -76,8 +76,7 @@ export function addUserWeight(weight) {
         if (!responseJSON.error) {
           dispatch({ type: "ADD_CURRENT_USER_WEIGHT", payload: responseJSON });
         } else {
-
-          console.log(responseJSON.error);
+          toast.error(responseJSON.error)
         }
       });
   };
@@ -104,7 +103,7 @@ export function updateUserWeight(id, weight) {
             payload: responseJSON
           });
         } else {
-          console.log(responseJSON.error);
+          toast.error(responseJSON.error)
         }
       });
   };
@@ -126,7 +125,7 @@ export function deleteUserWeight(id) {
         if (!responseJSON.error) {
           dispatch({ type: "DELETE_CURRENT_USER_WEIGHT", payload: responseJSON });
         } else {
-          // toast.error(responseJSON.error)
+          toast.error(responseJSON.error)
         }
       });
   };
@@ -136,6 +135,7 @@ export function logoutAction() {
   return dispatch => {
     return new Promise((resolve, reject) => {
       dispatch({ type: "LOGOUT_USER" });
+      toast.success("Logged you out!")
 
       resolve();
     });
