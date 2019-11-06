@@ -14,6 +14,9 @@ import Signup from "./features/user/form/Signup";
 import NotFound from "./commons/NotFound"
 import { leftItems, rightItems, loggedInRightItems } from "./commons/lists";
 import { connect } from "react-redux";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function App() {
   const generateLoginSignupRoutes = () => {
@@ -29,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+      <ToastContainer />
       <Navbar
         leftItems={leftItems}
         rightItems={rightItems}

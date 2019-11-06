@@ -1,4 +1,5 @@
 import { api_url } from "../commons/api_url";
+import { toast } from "react-toastify";
 
 export function fetchUser(id) {
   return dispatch => {
@@ -32,6 +33,8 @@ export function loginAction(formData) {
         localStorage.setItem("token", responseJSON.token);
         localStorage.setItem("currentUserId", responseJSON.id);
         dispatch({ type: "LOGIN", payload: responseJSON });
+      }).catch(error => {
+        toast.error(error)
       });
   };
 }
@@ -73,6 +76,7 @@ export function addUserWeight(weight) {
         if (!responseJSON.error) {
           dispatch({ type: "ADD_CURRENT_USER_WEIGHT", payload: responseJSON });
         } else {
+
           console.log(responseJSON.error);
         }
       });
@@ -122,7 +126,7 @@ export function deleteUserWeight(id) {
         if (!responseJSON.error) {
           dispatch({ type: "DELETE_CURRENT_USER_WEIGHT", payload: responseJSON });
         } else {
-          console.log(responseJSON.error);
+          // toast.error(responseJSON.error)
         }
       });
   };

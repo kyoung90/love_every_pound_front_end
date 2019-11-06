@@ -1,4 +1,5 @@
 import {api_url} from "../commons/api_url"
+import { toast } from "react-toastify";
 
 export function fetchRandomQuote() {
     return (dispatch) => {
@@ -10,6 +11,8 @@ export function fetchRandomQuote() {
                 return response.json()
             }).then(responseJSON => {
                 dispatch({type: "FETCH_RANDOM_QUOTE", payload: responseJSON})
-            })
+            }).catch(error => {
+                toast.error(error.message)
+              })
     };
 }
