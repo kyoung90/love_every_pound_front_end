@@ -12,6 +12,7 @@ import SettingsForm from "./features/user/form/SettingsForm";
 import Login from "./features/user/form/Login";
 import Signup from "./features/user/form/Signup";
 import NotFound from "./commons/NotFound"
+import PrivateRoute from "./commons/PrivateRoute"
 import { leftItems, rightItems, loggedInRightItems } from "./commons/lists";
 import { connect } from "react-redux";
 import { ToastContainer } from "react-toastify";
@@ -42,8 +43,8 @@ function App() {
           <Switch>
             <Route exact path="/" render={() => <Home />} />
             <Route exact path="/about" render={() => <About />} />
-            <Route exact path="/quote" render={() => <QuoteDisplay />} />
-            <Route exact path="/weights" render={() => <WeightDisplay />} />
+            <PrivateRoute path='/quote' component={QuoteDisplay} />
+            <PrivateRoute path='/weights' component={WeightDisplay} />
             <Route
               exact
               path="/user/:id"
