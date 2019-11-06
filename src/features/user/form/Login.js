@@ -27,9 +27,8 @@ const Login = props => {
       if (localStorage.getItem("token")){
         props.history.push("/quote");
       } else {
-        toast.error("Could not log you in with what you entered.")
+        toast.error("Email and/or password is incorrect. Please try again.")
       }
-      
     });
   };
 

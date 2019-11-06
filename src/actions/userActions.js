@@ -27,19 +27,14 @@ export function loginAction(formData) {
       body: JSON.stringify(formData)
     })
       .then(response => {
-        if (response.status == 401){
-          toast.error("You must be logged in to do that!")
-        } else{
           return response.json();
-        }
-        
       })
       .then(responseJSON => {
         localStorage.setItem("token", responseJSON.token);
         localStorage.setItem("currentUserId", responseJSON.id);
         dispatch({ type: "LOGIN", payload: responseJSON });
       }).catch(error => {
-        toast.error(error.message)
+       
       });
   };
 }

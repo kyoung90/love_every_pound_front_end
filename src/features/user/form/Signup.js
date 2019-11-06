@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchPreferences } from "../../../actions/preferenceActions";
 import { signupAction, loginAction } from "../../../actions/userActions";
+import {toast} from "react-toastify"
 
 // const options = [
 //   { key: "f", id="1", text: "Fitness", value: "fitness" },
@@ -54,7 +55,11 @@ const Signup = props => {
   const handleSubmit = () => {
     props.signup({ user }).then(() => {
       props.login({ user }).then(() => {
-        props.history.push("/quote");
+        if (localStorage.getItem("token")){
+          props.history.push("/quote");
+        } else {
+          toast.error("Could not sign you up with what you entered.")
+        }
       });
     });
   };
