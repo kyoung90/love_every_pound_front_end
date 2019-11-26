@@ -1,3 +1,8 @@
+* {
+  font-family: Montserrat;
+}
+
+
 .fc-content {
   text-align: center;
   background-color: white;
@@ -36,7 +41,7 @@ body {
 }
 
 .main-container {
-  padding-top: 3em;
+
   /* text-align: center;
   align-content: center; */
   margin: 0 auto;
@@ -86,29 +91,66 @@ body {
   color: #d4d949 !important;
 }
 
-
-
-
 /* .aboutMe{
   background-image: url("/assets/images/walking.jpg");
   height: 800px;
 
 } */
-.Mission{
+
+.Mission {
   background-color: #d4d949 !important;
   color: black;
 }
 
-.Vision{
+.Vision {
   background-color: #a0a605 !important;
-  color:black;
+  color: black;
 }
 
-.Creators{
+.Creators {
   background-color: #98d8c9 !important;
   color: black;
 }
 
-#mission-card{
-  padding-top: 4em ;
+#mission-card {
+  padding-top: 4em;
+  opacity: .7;
 }
+
+#aboutMe {
+  text-align: center;
+}
+
+#aboutPicture {
+  opacity: .8;
+}
+
+#quoteCard {
+  padding-top: 7em;
+  opacity: .79;
+}
+#quoteHeader{
+  text-size: 4em;
+
+}
+#quoteSegment{
+  padding: 10em;
+  min-height: 31em;
+  vertical-align: middle;
+}
+
+#aboutCard{
+  padding-top: 8em;
+}
+
+
+.homeBanner {
+  color: white;
+  background-color: #2f2f2f;
+  opacity: .8;
+  padding-top: 3em;
+  padding-bottom: .9em;
+  text-align: center;
+}
+
+

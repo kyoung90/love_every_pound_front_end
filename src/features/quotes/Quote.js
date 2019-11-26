@@ -1,40 +1,22 @@
 import React from "react";
-import { Card, Button, Container } from "semantic-ui-react";
-import { Link } from "react-dom";
-import WeightForm from "../user/form/WeightForm";
+import { Card, Container } from "semantic-ui-react";
 
 const Quote = props => {
   const quote = props.quote
     ? [
         <br />,
-        <h5> {props.quote.content} </h5>,
+        <h2> {props.quote.content} </h2>,
         <br />,
-        <h6> By: {props.quote.author.name} </h6>
+        <h4> By: {props.quote.author.name} </h4>
       ]
     : [];
 
   return (
-    <Container fluid maxWidth={1000}>
-      <Card centered raised className="card">
-        <Card.Content className="success" header="Your daily inspiration" />
-        <Card.Content description={quote} />
+    <Container id="quoteCard">
+      <Card centered fluid className="card">
+        <Card.Content className="success"  id = "quoteHeader"><h3>Your Daily Motivation</h3></Card.Content>
+        <Card.Content className="success" id="quoteSegment"  header={quote} />
         <Card.Content className="success" extra>
-          <Button
-            primary
-            className="info"
-            circular
-            as={Link}
-            to="/"
-            icon="quote right"
-          />
-          <Button
-            primary
-            className="info"
-            circular
-            as={Link}
-            to="/weights"
-            icon="calendar alternate"
-          />
         </Card.Content>
       </Card>
     </Container>

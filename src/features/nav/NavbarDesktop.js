@@ -29,7 +29,7 @@ const NavbarDesktop = ({
           as={NavLink}
           to="/"
           size="mini"
-          src="https://react.semantic-ui.com/logo.png"
+          src="/assets/images/logo.png"
         />
       </Menu.Item>
       {leftItems.map(item => (
