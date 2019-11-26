@@ -1,33 +1,62 @@
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* First image (Logo. Full height) */
-  .home {
-    background-image: url("/assets/images/watermelon.jpg");
-    min-height: 100%;
-  }
-  
-  /* Second image (About top) */
-  .bgimg-2 {
-    background-image: url("/assets/images/watermelon.jpg");
 
-    min-height: 800px;
-  }
   
   /* Third image (About bottom) */
   .bgimg-3 {
     background-image: url("/assets/images/swim.jpg");
-    min-height: 1000px;
+    background-color: white;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top left, center 0;
+		background-attachment: fixed,
   }
-  
-  .w3-wide {letter-spacing: 10px;}
-  .w3-hover-opacity {cursor: pointer;}
-  
+  .quoteContainer {
+    background-image: url("/assets/images/so-bright.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    min-height: 1000px;
+    max-heght: 2500px;
+  }
+
+  .homeContainer {
+    background-image: url("/assets/images/avocado.jpeg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    padding-bottom: 25em;
+  }
+
+  .loginContainer {
+    background-image: url("/assets/images/leaf.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    padding-bottom: 25em;
+  }
+  .signupContainer {
+    background-image: url("/assets/images/lantern.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    padding-bottom: 25em;
+  }
+  .progressContainer {
+    background-image: url("/assets/images/leaping.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    padding-bottom: 25em;
+  }
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1600px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {

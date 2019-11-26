@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import WeightCalendar from "./WeightCalendar";
 import WeightChart from "./WeightChart";
-import { Grid, Segment } from "semantic-ui-react";
+import { Grid, Segment,Container } from "semantic-ui-react";
 import { connect } from "react-redux";
 import { fetchUser } from "../../actions/userActions";
 import LoadingScreen from "../../commons/LoadingScreen";
@@ -23,6 +23,8 @@ const WeightDisplay = props => {
   }
 
   return (
+    <div className="progressContainer">
+      <Container id="formCard">
     <Grid columns={2} stackable={true} centered={true} textAlign="center">
       <Grid.Column>
         <Segment className="weight-chart">
@@ -35,6 +37,8 @@ const WeightDisplay = props => {
         </Segment>
       </Grid.Column>
     </Grid>
+    </Container>
+    </div>
   );
 };
 

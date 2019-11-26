@@ -5,7 +5,8 @@ import {
   Button,
   Header,
   Segment,
-  Message
+  Message,
+  Divider
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { loginAction } from "../../../actions/userActions";
@@ -33,9 +34,13 @@ const Login = props => {
   };
 
   return (
+    <div className= "loginContainer">
+    <Segment id="formCard"  vertical>
+          
+       
     <Grid textAlign="center" style={{ height: "50vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as="h2" textAlign="center">
+        <Header as="h1" id="formText" textAlign="center">
           Log-in to your account
         </Header>
         <Form onSubmit={handleSubmit} size="large" className="info">
@@ -74,7 +79,9 @@ const Login = props => {
           New to us? <Link to="/signup">Sign Up</Link>
         </Message>
       </Grid.Column>
-    </Grid>
+    </Grid> 
+    </Segment>
+    </div>
   );
 };
 

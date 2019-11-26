@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Responsive } from "semantic-ui-react";
+import { Responsive } from "semantic-ui-react";
 import NavbarDesktop from "./NavbarDesktop";
 import NavbarMobile from "./NavbarMobile";
 import { withRouter } from "react-router-dom";
