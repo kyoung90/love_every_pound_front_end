@@ -29,6 +29,34 @@
     background-attachment: fixed;
     padding-bottom: 25em;
   }
+
+  .loginContainer {
+    background-image: url("/assets/images/leaf.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    padding-bottom: 25em;
+  }
+  .signupContainer {
+    background-image: url("/assets/images/lantern.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    padding-bottom: 25em;
+  }
+  .progressContainer {
+    background-image: url("/assets/images/leaping.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left, center 0;
+    background-attachment: fixed;
+    padding-bottom: 25em;
+  }
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1600px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {

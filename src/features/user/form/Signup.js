@@ -65,9 +65,11 @@ const Signup = props => {
   };
 
   return (
+  <div className="signupContainer">
+    <Segment id="formCard" vertical>
     <Grid textAlign="center" style={{ height: "70vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
-        <Header as="h2" className="info-text" textAlign="center">
+        <Header as="h1" className="info-text" id="formText2" textAlign="center">
           Create an account
         </Header>
         <Form size="large" onSubmit={handleSubmit}>
@@ -160,6 +162,8 @@ const Signup = props => {
         </Message>
       </Grid.Column>
     </Grid>
+    </Segment>
+    </div>
   );
 };
 
